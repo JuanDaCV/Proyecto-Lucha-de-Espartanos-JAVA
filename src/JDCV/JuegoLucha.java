@@ -4,7 +4,7 @@ class JuegoLucha {
 
     private Personaje jugador1;
     private Personaje jugador2;
-    private static final int DELAY_SECONDS = 6; // Tiempo de retardo entre turnos
+    private static final int DELAY_SECONDS = 2; // Tiempo de retardo entre turnos
 
     // Constructor para inicializar los personajes
     public JuegoLucha(Personaje jugador1, Personaje jugador2) {

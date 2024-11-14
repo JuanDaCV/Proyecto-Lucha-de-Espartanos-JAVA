@@ -13,14 +13,15 @@ public class main {
 
         System.out.print(" ► Nombre del Espartano1 : ");
         String nombre1 = scanner.nextLine();
-        System.out.print(" ► Tipo de Arma del Espartano1 \n" 
+        System.out.print(" ► Tipo de Arma del Espartano1 \n"
                 + "  Opciones:"
                 + "\n   (a)  Arco/Flecha"
                 + "\n   (c)  Chacla"
                 + "\n   (e)  Espada"
                 + "\n   (h)  Hacha"
                 + "\n   (l)  Lanza"
-                + "\n   (m)  MartilloGuerra \n"
+                + "\n   (m)  MartilloGuerra"
+                + "\n   (p)  Puño Limpio \n"
                 + "Digita el caracter de tu arma : "
         );
         String tipoArma1 = scanner.nextLine();
@@ -30,21 +31,22 @@ public class main {
 
         System.out.print(" ► Nombre del Espartano2 : ");
         String nombre2 = scanner.nextLine();
-        System.out.print(" ► Tipo de Arma del Espartano1 \n" 
+        System.out.print(" ► Tipo de Arma del Espartano1 \n"
                 + "  Opciones:"
                 + "\n   (a)  Arco/Flecha"
                 + "\n   (c)  Chacla"
                 + "\n   (e)  Espada"
                 + "\n   (h)  Hacha"
                 + "\n   (l)  Lanza"
-                + "\n   (m)  MartilloGuerra \n"
+                + "\n   (m)  MartilloGuerra"
+                + "\n   (p)  Puño Limpio \n"
                 + " → Digita el caracter de tu arma : "
         );
         String tipoArma2 = scanner.nextLine();
         System.out.print(" ► ¿El Espartano2 tiene escudo? (true/false) : ");
         boolean tieneEscudo2 = scanner.nextBoolean();
         System.out.println(" ");
-        
+
         //Patron Fachade
         Personaje jugador1 = facade.crearPersonaje(nombre1, tipoArma1, tieneEscudo1);
         Personaje jugador2 = facade.crearPersonaje(nombre2, tipoArma2, tieneEscudo2);

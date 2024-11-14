@@ -10,12 +10,14 @@ class JuegoFacade {
             arma = new Lanza();
         } else if (tipoArma.equalsIgnoreCase("h")) {
             arma = new Hacha();
-        } else if (tipoArma.equalsIgnoreCase("af")) {
+        } else if (tipoArma.equalsIgnoreCase("a")) {
             arma = new ArcoFlecha();
         } else if (tipoArma.equalsIgnoreCase("m")) {
             arma = new MartilloGuerra();
         } else if (tipoArma.equalsIgnoreCase("c")) {
             arma = new Chancla();
+        } else if (tipoArma.equalsIgnoreCase("p")) {
+            arma = new PunoLimpio();
         }
         Escudo escudo = tieneEscudo ? new Escudo() : null;
         return new Personaje(nombre, arma, escudo);

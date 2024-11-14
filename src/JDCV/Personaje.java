@@ -24,7 +24,12 @@ class Personaje {
         Random rand = new Random();
         double dano = rand.nextInt((MAX_DANO - MIN_DANO) + 1) + MIN_DANO + (arma != null ? arma.getDano() : 0);
         oponente.recibirDano(dano);
-        System.out.println("        " + this.nombre + " ataca a " + oponente.getNombre() + " causando " + dano + " puntos de daño.");
+        if (dano < 30) {
+            System.out.println("        " + this.nombre + " ataca a " + oponente.getNombre() + " causando " + dano + " puntos de daño.");
+        } else {
+            System.out.println("        " + this.nombre + " ataca a " + oponente.getNombre() + " causando " + dano + " puntos de daño."
+                    + "\n ! Golpe Critico ¡");
+        }
     }
 
     // Método para recibir daño modificado para incluir la reducción del escudo  
