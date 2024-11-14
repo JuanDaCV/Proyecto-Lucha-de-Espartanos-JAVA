@@ -8,6 +8,9 @@ El proyecto "Lucha de Espartanos" es un juego de combate en el que dos personaje
 - Incorporar armas y escudos con efectos significativos en el combate.
 - Aplicar el patrón de diseño Facade para simplificar la creación y configuración de personajes.
 
+## Diagrama:  
+![Diagrama del Proyecto](imagenes/diagrama.png)
+
 ## Diseño del Sistema
 ### Clases Principales
 El sistema está compuesto por las siguientes clases principales:
